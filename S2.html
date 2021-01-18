@@ -1,0 +1,338 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Session II - Semi-Probabilistic Methods &#8212; Workshop Proceedings</title>
+    
+  <link rel="stylesheet" href="_static/css/index.73d71520a4ca3b99cfee5594769eaaae.css">
+
+    
+  <link rel="stylesheet"
+    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+  <link rel="stylesheet"
+    href="_static/vendor/open-sans_all/1.44.1/index.css">
+  <link rel="stylesheet"
+    href="_static/vendor/lato_latin-ext/1.44.1/index.css">
+
+    
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/sphinx-book-theme.40e2e510f6b7d1648584402491bb10fe.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="_static/js/index.3da636dd464baa7582d2.js">
+
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/togglebutton.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="_static/sphinx-book-theme.d31b09fe5c1d09cb49b26a786de4a05d.js"></script>
+    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script >
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Workshop Conclusions" href="WSC.html" />
+    <link rel="prev" title="Session I - Practical Assessment, Requirements and Examples" href="S1.html" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
+
+
+
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+<a class="navbar-brand text-wrap" href="index.html">
+  
+  <img src="_static/JCSS_logo.png" class="logo" alt="logo">
+  
+  
+  <h1 class="site-logo" id="site-title">Workshop Proceedings</h1>
+  
+</a>
+</div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form>
+<nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+    <ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="intro.html">
+   JCSS Workshop on the Assessment of Existing Structures
+  </a>
+ </li>
+</ul>
+<ul class="current nav sidenav_l1">
+ <li class="toctree-l1 current active collapsible-parent">
+  <a class="reference internal" href="content.html">
+   Program and overview
+  </a>
+  <ul class="current collapse-ul">
+   <li class="toctree-l2">
+    <a class="reference internal" href="S1.html">
+     Session I - Practical Assessment, Requirements and Examples
+    </a>
+   </li>
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
+     Session II - Semi-Probabilistic Methods
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="WSC.html">
+     Workshop Conclusions
+    </a>
+   </li>
+  </ul>
+  <i class="fas fa-chevron-down">
+  </i>
+ </li>
+</ul>
+
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="row topbar fixed-top container-xl">
+    <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show">
+    </div>
+    <div class="col pl-2 topbar-main">
+        
+        <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+            data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+            aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+            title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+            <i class="fas fa-bars"></i>
+            <i class="fas fa-arrow-left"></i>
+            <i class="fas fa-arrow-up"></i>
+        </button>
+        
+        
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="_sources/S2.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+        <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/executablebooks/jupyter-book"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        <a class="issues-button"
+            href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2FS2.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
+        
+    </div>
+</div>
+
+
+        <!-- Full screen (wrap in <a> to have style consistency -->
+        <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+                data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+                title="Fullscreen mode"><i
+                    class="fas fa-expand"></i></button></a>
+
+        <!-- Launch buttons -->
+
+    </div>
+
+    <!-- Table of contents -->
+    <div class="d-none d-md-block col-md-2 bd-toc show">
+        
+        <div class="tocsection onthispage pt-5 pb-3">
+            <i class="fas fa-list"></i> Contents
+        </div>
+        <nav id="bd-toc-nav">
+            <ul class="nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#aim-of-the-session">
+   Aim of the Session
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#abstracts">
+   Abstracts:
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#fib-tg-3-1-developments-concerning-semi-probabilistic-format">
+     fib TG 3.1 Developments Concerning Semi-Probabilistic Format
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#determination-of-characteristic-concrete-compressive-strength-of-existing-structures-according-to-en-13791">
+     Determination of Characteristic Concrete Compressive Strength of Existing Structures According to EN 13791
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#semi-probabilistic-format-for-the-assessment-of-existing-bridges-concepts-and-challenges">
+     Semi-Probabilistic Format for the Assessment of Existing Bridges: Concepts and Challenges
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#potential-and-challenges-of-the-design-value-approach">
+     Potential and Challenges of the Design Value Approach
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+        </nav>
+        
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="section" id="session-ii-semi-probabilistic-methods">
+<h1>Session II - Semi-Probabilistic Methods<a class="headerlink" href="#session-ii-semi-probabilistic-methods" title="Permalink to this headline">¶</a></h1>
+<p><strong>Moderator: Robby Caspeele</strong></p>
+<div class="section" id="aim-of-the-session">
+<h2>Aim of the Session<a class="headerlink" href="#aim-of-the-session" title="Permalink to this headline">¶</a></h2>
+<p>In order to enable a simple and straightforward assessment procedure for existing structures, the development of appropriate partial factors to be used in a semi-probabilistic verification format such as the one in the Eurocodes forms a stepping stone towards a more widely used, objective and coherent assessment process for existing structures by practitioners. In this regard, the objectives of the session are to provide an overview of current practices, practical appraisals and critical opinions with respect to the use of partial factor formats for the assessment of existing structures, as well as to highlight the challenges and the potential for further developments in standards, practice and in research.</p>
+</div>
+<div class="section" id="abstracts">
+<h2>Abstracts:<a class="headerlink" href="#abstracts" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="fib-tg-3-1-developments-concerning-semi-probabilistic-format">
+<h3>fib TG 3.1 Developments Concerning Semi-Probabilistic Format<a class="headerlink" href="#fib-tg-3-1-developments-concerning-semi-probabilistic-format" title="Permalink to this headline">¶</a></h3>
+<p><strong>by Miroslav Sykora, Klokner Institute, Czech Republic and
+Dimitris Diamantidis, OTH Regensburg, Germany</strong></p>
+<p>Text</p>
+</div>
+<div class="section" id="determination-of-characteristic-concrete-compressive-strength-of-existing-structures-according-to-en-13791">
+<h3>Determination of Characteristic Concrete Compressive Strength of Existing Structures According to EN 13791<a class="headerlink" href="#determination-of-characteristic-concrete-compressive-strength-of-existing-structures-according-to-en-13791" title="Permalink to this headline">¶</a></h3>
+<p><strong>by Christian Glock and
+Rabea Sefrin, TU Kaiserslautern, Germany</strong></p>
+<p>The assessment of existing structures is becoming increasingly important, because in the sense of resource-efficient handling of existing buildings, conversion should be given priority over demolition and new construction. At European level, EN 13791:2019 replaced the 2007 standard (EN 13791:2007) for the determination of the in-situ concrete compressive strength. The standard approach given in EN 13791:2007 produces unreliable results for existing structures, especially for a small size of samples (Approach B). For this reason, it was necessary to adapt the approach for small sample sizes at European level. In Germany, the approach B has already been modified and introduced with DIN EN 13791/A20. Especially for small sample sizes of drill cores (3 ≤ n ≤ 7), the introduction of EN 13791:2019 results in significant changes in the determination of the characteristic in-situ concrete compressive strength. However, there is currently no background information available on the statistical robustness of the new methods, which is why this was checked within the framework of the research project DBV 317. The presentation will give an overview about these results.</p>
+</div>
+<div class="section" id="semi-probabilistic-format-for-the-assessment-of-existing-bridges-concepts-and-challenges">
+<h3>Semi-Probabilistic Format for the Assessment of Existing Bridges: Concepts and Challenges<a class="headerlink" href="#semi-probabilistic-format-for-the-assessment-of-existing-bridges-concepts-and-challenges" title="Permalink to this headline">¶</a></h3>
+<p><strong>by André Orcesi, CEREMA, France</strong></p>
+<p>The presentation will focus on the partial factor format applied to the assessment of existing bridges and the fundamental differences to be considered when compared to the design stage. The application of design-orientated methods to the assessment of existing structures often leads to a high degree of conservatism, which may have severe economic, environment and socio-political consequences when it results in satisfactory structures being condemned as unsafe, thereby leading to an unnecessary investment of resources in replacement or retrofitting, with its associated dismantling. Also, the potentially available information about geometry, material properties, loading and environmental conditions is not the same for new and existing structures and this implies to take into account different levels of uncertainty. The presentation will briefly present the on-going work of the IABSE TG1.3, currently investigating how a semi-probabilistic format can be used for assessment of existing bridges, in connection with JCSS and fib Task Group 3.1.</p>
+</div>
+<div class="section" id="potential-and-challenges-of-the-design-value-approach">
+<h3>Potential and Challenges of the Design Value Approach<a class="headerlink" href="#potential-and-challenges-of-the-design-value-approach" title="Permalink to this headline">¶</a></h3>
+<p><strong>John Sørensen, Aalborg University, Denmark and
+Jochen Köhler, NTNU, Norway</strong></p>
+<p>The Design Value Format approach is included in e.g. ISO 2394:2015 and EN 1990:2002 as a simplified method to estimate partial factors for loads and resistances. The key assumption is that standardized alpha-values equal to 0.7 and 0.8 for loads and resistances can be used to estimate the partial factors. Furthermore, a similar method is sometimes suggested for the assessment of existing structures. In this presentation a number of limitations to the use of this approach is presented and discussed. This includes the a) in some applications the standardized alpha-values are too low and results in too low partial factors although the standards indicate that alpha-values equal to 1.0 can be applied if needed; b) in other applications the alpha-values are too large resulting in too safe and uneconomic structures requiring too much material; c) if the Design Value Format method is used to estimate partial factors for resistance variables then the method should also be used for load variables and visa versa; d) climatic loads are generally modelled by a time-dependent and a time-independent contribution which are difficult to include in the method and implying that the formulas given in e.g. EN 1990:2002 cannot be used. The presentation illustrates the above concerns and discuss possible improvements.</p>
+</div>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        </div>
+    </div>
+    
+    
+    <div class='prev-next-bottom'>
+        
+    <a class='left-prev' id="prev-link" href="S1.html" title="previous page">Session I - Practical Assessment, Requirements and Examples</a>
+    <a class='right-next' id="next-link" href="WSC.html" title="next page">Workshop Conclusions</a>
+
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+          By Joint Community on Structural Safety<br/>
+        
+            &copy; Copyright 2020.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+
+    
+  <script src="_static/js/index.3da636dd464baa7582d2.js"></script>
+
+
+    
+  </body>
+</html>
