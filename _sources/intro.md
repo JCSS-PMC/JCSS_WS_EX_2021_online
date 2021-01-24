@@ -23,7 +23,10 @@ Trinity College Dublin, Ireland, Chair of the Organising Committee
 Aalborg University, Denmark, 
 President of the JCSS**
 
-TEXT
+**Abstract:** One of the major contemporary challenges of the structural engineering community is to identify new best practices for the development, maintenance and renewal of the built environment; new best practices that ensure an adequate balance between the welfare it facilitates and the environmental impacts it implies. In this context, integrity management of existing structures plays a key role as a major contributor to expenditures and not least through substantial impacts to the qualities of the environment.
+Reassessment of structures entails the process of gathering and conceiving information in support of structural integrity management. The scientific basis for this is readily available in the Bayesian probability theory and the Bayesian decision analysis since more than 70 years and its application in structural engineering as a means for reassessing structures goes back at least 40 years by now. 
+In the present presentation, starting point will be taken in a very brief overview of early achievements in the area of probabilistic reassessment of structures, as well as previous contributions to standardization of approaches and procedures for doing so. Thereafter, core potentials and challenges associated with probabilistic reassessment of structures in the context of standardization are summarized. Finally, the presentation concludes with a view to the “near future” impact of what is presently referred to as Industry 4.0 – a reality that standardization of reassessment of structures must embrace. 
+
 
 
 ## Opening Speech
