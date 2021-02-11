@@ -18,7 +18,7 @@ The timing of the workshop is very appropriate given the current activity to dev
 Trinity College Dublin, Ireland, Chair of the Organising Committee
 
 
-## Welcome Address
+## [Welcome Address](https://folk.ntnu.no/jochenk/JCSSWS2101/0Faber.pdf)
 **by Prof. Michael Faber, Professor on Risk Informed Decision Support for Structures
 Aalborg University, Denmark, 
 President of the JCSS**
@@ -29,7 +29,7 @@ In the present presentation, starting point will be taken in a very brief overvi
 
 
 
-## Opening Speech
+## [Opening Speech](https://folk.ntnu.no/jochenk/JCSSWS2101/0Denton.pdf)
 **by Prof. Steve Denton FREng
 Head of Civil, Bridge and Ground Engineering, WSP
 Visiting Professor, University of Bath, UK,
